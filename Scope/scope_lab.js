@@ -30,3 +30,16 @@ function show(){
     console.log(functionVar); // Throws ReferenceError
     console.log(functionLet); // Throws ReferenceError
     console.log(functionConst); // Throws ReferenceError
+
+    {
+    var blockVar2 = 1;
+    let blockLet2 = 2;
+    const blockConst2 = 3;   
+    blockVar2 = 4;
+    blockLet2 = 5;
+    blockConst2 = 6;
+    }
+
+    blockVar2 = 7;
+    blockLet2 = 8;
+    blockConst2 = 9;
